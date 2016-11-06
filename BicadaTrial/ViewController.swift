@@ -9,6 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet var messageField:UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,8 +23,8 @@ class ViewController: UIViewController {
     }
     
     func updateTextBox(){
-    
-        print("Beacon found")
+        
+        self.messageField.text = "Beacon Found!!!"
         
     }
 
